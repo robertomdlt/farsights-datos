@@ -10,8 +10,12 @@ Cumbres y volcanes con nombre de OpenStreetMap, en cuadrículas de 1° × 1°.
 - `index.json`: versión, fecha de generación y lista de cuadrículas cubiertas.
 - `<lat>_<lon>.json`: esquina suroeste de la cuadrícula en grados enteros (`40_-4` = 40–41° N, 4–3° O).
   Lista de cumbres con claves cortas: `i` id del nodo OSM, `n` nombre, `a` latitud, `o` longitud,
-  `l` nombres en otros idiomas (opcional), `e` altitud en m (opcional), `p` prominencia en m (opcional).
-  Una cuadrícula cubierta sin cumbres es `[]`.
+  `l` nombres en otros idiomas (opcional), `r` nombre en letras latinas cuando `n` está en otra escritura y no
+  hay inglés (opcional), `e` altitud en m (opcional), `p` prominencia en m (opcional).
+  Una cuadrícula cubierta sin cumbres es `[]`. Solo hay ficheros para las cuadrículas cubiertas del todo por
+  los datos descargados; para las demás, la app pregunta a OpenStreetMap (Overpass).
+
+Regiones (v1.1): Europa, Marruecos, Canarias, Argelia, Túnez, México, Nepal, China, India, Bután y Pakistán.
 
 Se generan con `scripts/build-peak-tiles.mjs` del repositorio de la app.
 
