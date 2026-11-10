@@ -15,9 +15,9 @@ Cumbres y volcanes con nombre de OpenStreetMap, en cuadrículas de 1° × 1°.
   Una cuadrícula cubierta sin cumbres es `[]`. Solo hay ficheros para las cuadrículas cubiertas del todo por
   los datos descargados; para las demás, la app pregunta a OpenStreetMap (Overpass).
 
-Regiones (v1.2): todo el mundo (Geofabrik por continentes). Para no pasar de 50 MB, las cuadrículas más densas
-se recortan a un tope de cumbres: quedan siempre las que tienen artículo en Wikipedia o Wikidata, y del resto las de
-más prominencia, más idiomas y más altitud.
+Regiones (v1.2): todo el mundo (Geofabrik por continentes). Para no pasar de 50 MB se recortan solo las cuadrículas
+de EE. UU. a un tope de cumbres; España y el resto quedan enteros. Quedan siempre las que tienen artículo en
+Wikipedia o Wikidata, y del resto las de más prominencia, más idiomas y más altitud.
 
 Se generan con `scripts/build-peak-tiles.mjs` del repositorio de la app.
 
